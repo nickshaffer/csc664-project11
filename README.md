@@ -1,8 +1,7 @@
 # Automated tuberculosis interpretation using CNNs
-Project 11
+
 ## Project Description & Learning Goals
-### (from Project List)
-Description and learning goals: Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Most infections show no symptoms and it is also time consuming to manually interpret each image to decide whether the patient is affected or not. Therefore, automation in interpretation and detection of this disease is important. In this project, you will apply a deep learning technique (convolution neural networks) to detect and classify patterns in such images.
+Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Most infections show no symptoms and it is also time consuming to manually interpret each image to decide whether the patient is affected or not. Therefore, automation in interpretation and detection of this disease is important. In this project, you will apply a deep learning technique (convolution neural networks) to detect and classify patterns in such images.
 
 ### Data
 https://www.kaggle.com/saife245/tuberculosis-image-datasets
