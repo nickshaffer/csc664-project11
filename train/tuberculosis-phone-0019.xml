@@ -1,0 +1,32 @@
+<annotation>
+	<filename>tuberculosis-phone-0019.jpg</filename>
+	<size>
+                <width>1632</width>
+                <height>1224</height>
+                <depth>3</depth>
+            </size>
+	<object>
+		<name>TBbacillus</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>942</xmin>
+			<ymin>607</ymin>
+			<xmax>998</xmax>
+			<ymax>729</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TBbacillus</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>184</xmin>
+			<ymin>482</ymin>
+			<xmax>232</xmax>
+			<ymax>534</ymax>
+		</bndbox>
+	</object>
+</annotation>
