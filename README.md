@@ -9,5 +9,5 @@ Faster R-CNN ResNet-50 FPN
 * pip install detecto
 
 # Credit
-Assets taken from [Simplest way to do Object Detection on custom datasets](https://www.analyticsvidhya.com/blog/2021/06/simplest-way-to-do-object-detection-on-custom-datasets/)
+Assets taken from [alankbi/detecto](https://github.com/alankbi/detecto)
 
