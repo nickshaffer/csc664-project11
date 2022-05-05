@@ -24,6 +24,16 @@ while(val != "3"):
         Test_dataset = core.Dataset('Test/')
         loader=core.DataLoader(Train_dataset, batch_size=4, shuffle=True)
         model = core.Model(['TBbacillus'])
+
+        # --- improvement attempt ---
+        # torch_model = model.get_internal_model()
+        # for name, p in torch_model.named_parameters():
+        #     print(name, p.requires_grad)
+
+        # if 'roi_heads' not in name and 'rpn' not in name:
+        #     p.requires_grad = False
+
+
         losses = model.fit(loader, Test_dataset, epochs=10, lr_step_size=5, learning_rate=0.01, verbose=True)
 
         plt.title('model loss')
