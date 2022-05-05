@@ -36,7 +36,7 @@ while(val != "3"):
     if(val == "2"):
         model = core.Model.load('model_weights.pth', ['TBbacillus'])
 
-        res = input("Enter 1 for images from kaggle with TB, 2 for images from kaggle without TB, and 3 for images that are from the internet: ")
+        res = input("Enter 1 for images from kaggle with TB, 2 for images from kaggle without TB, and 3 for images that are from the internet, and 4 for your own images: ")
         folder = "images - kaggle with TB"
         match int(res):
             case 1:
@@ -44,7 +44,9 @@ while(val != "3"):
             case 2:
                 folder = "images - kaggle without TB"
             case 3:
-                folder = "images - new"
+                folder = "images - internet"
+            case 4: 
+                folder = "images - your own"
 
         for filename in os.listdir(folder):
             if val == "3":
