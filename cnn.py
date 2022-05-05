@@ -25,8 +25,10 @@ while(val != "3"):
         loader=core.DataLoader(Train_dataset, batch_size=4, shuffle=True)
         model = core.Model(['TBbacillus'])
 
-        # --- improvement attempt ---
+        # --- improvement attempts ---
         # torch_model = model.get_internal_model()
+
+        # --- improvement attempt: 1 ---
         # for name, p in torch_model.named_parameters():
         #     print(name, p.requires_grad)
 
