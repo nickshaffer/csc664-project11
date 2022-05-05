@@ -23,7 +23,7 @@ Faster R-CNN ResNet-50 FPN
         * folder 1 will be images from kaggle with TB
         * folder 2 will be images from kaggle without TB
         * folder 3 will be images from the internet
-        * after an image is predicted, enter y to predict the next iamge or n to stop predicting
+        * after an image is predicted, enter 2 to predict the next image or 3 to stop predicting
     * 3 will exit the program
 
 # Credit
