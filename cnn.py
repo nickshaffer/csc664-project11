@@ -20,11 +20,11 @@ while(val != "3"):
         utils.normalize_transform(),
         ])
 
-        Train_dataset=core.Dataset('Train/',transform=custom_transforms)#L1
-        Test_dataset = core.Dataset('Test/')#L2
-        loader=core.DataLoader(Train_dataset, batch_size=2, shuffle=True)#L3
-        model = core.Model(['TBbacillus'])#L4
-        losses = model.fit(loader, Test_dataset, epochs=25, lr_step_size=5, learning_rate=0.001, verbose=True)#L5
+        Train_dataset=core.Dataset('Train/',transform=custom_transforms)
+        Test_dataset = core.Dataset('Test/')
+        loader=core.DataLoader(Train_dataset, batch_size=2, shuffle=True)
+        model = core.Model(['TBbacillus'])
+        losses = model.fit(loader, Test_dataset, epochs=25, lr_step_size=5, learning_rate=0.001, verbose=True)
 
         plt.title('model loss')
         plt.ylabel('loss')
