@@ -43,16 +43,16 @@ while(val != "3"):
                 image = utils.read_image('Images/' + filename) 
                 predictions = model.predict(image)
                 labels, boxes, scores = predictions
-                show_labeled_image(image, boxes, labels)
+                # show_labeled_image(image, boxes, labels)
 
-                # thresh=.5
-                # filtered_indices=np.where(scores>thresh)
-                # filtered_scores=scores[filtered_indices]
-                # filtered_boxes=boxes[filtered_indices]
-                # num_list = filtered_indices[0].tolist()
-                # filtered_labels = [labels[i] for i in num_list]
-                # show_labeled_image(image, filtered_boxes, filtered_labels)
-                # val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
+                thresh=.5
+                filtered_indices=np.where(scores>thresh)
+                filtered_scores=scores[filtered_indices]
+                filtered_boxes=boxes[filtered_indices]
+                num_list = filtered_indices[0].tolist()
+                filtered_labels = [labels[i] for i in num_list]
+                show_labeled_image(image, filtered_boxes, filtered_labels)
+                val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
 
     val = input("Enter 1 to train, 2 to predict, or 3 to quit: ")
 
