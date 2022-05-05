@@ -26,6 +26,9 @@ while(val != "3"):
         model = core.Model(['TBbacillus'])#L4
         losses = model.fit(loader, Test_dataset, epochs=25, lr_step_size=5, learning_rate=0.001, verbose=True)#L5
 
+        plt.title('model loss')
+        plt.ylabel('loss')
+        plt.xlabel('epoch')
         plt.plot(losses)
         plt.show()
 
@@ -42,7 +45,7 @@ while(val != "3"):
                 labels, boxes, scores = predictions
                 # show_labeled_image(image, boxes, labels)
 
-                thresh=0.4
+                thresh=.5
                 filtered_indices=np.where(scores>thresh)
                 filtered_scores=scores[filtered_indices]
                 filtered_boxes=boxes[filtered_indices]
