@@ -26,6 +26,10 @@ Faster R-CNN ResNet-50 FPN
         * after an image is predicted, enter 2 to predict the next image or 3 to stop predicting
     * 3 will exit the program
 
+# Predicting your own images
+* drag image into "images - new" folder
+    * images predicted will be the first one in the list, so you may want to delete the existing images to immediately predict your own images
+
 # Credit
 Assets taken from [alankbi/detecto](https://github.com/alankbi/detecto)
 
