@@ -36,7 +36,7 @@ while(val != "3"):
     if(val == "2"):
         model = core.Model.load('model_weights.pth', ['TBbacillus'])
 
-        res = input("Enter 1 for images from kaggle with TB, 2 for images from kaggle without TB, and 3 for images that are from the internet, and 4 for your own images: ")
+        res = input("Enter 1 for images from kaggle with TB, 2 for images from kaggle without TB,\n\t3 for images that are from the internet, and 4 for your own images: ")
         folder = "images - kaggle with TB"
         match int(res):
             case 1:
@@ -48,23 +48,27 @@ while(val != "3"):
             case 4: 
                 folder = "images - your own"
 
-        for filename in os.listdir(folder):
-            if val == "3":
-                break
-            if filename.endswith('.jpg'):
-                image = utils.read_image(folder + '/' + filename) 
-                predictions = model.predict(image)
-                labels, boxes, scores = predictions
-                # show_labeled_image(image, boxes, labels)
+        if len(os.listdir(folder)) == 0:
+            print("Folder is empty!")
 
-                thresh=.5
-                filtered_indices=np.where(scores>thresh)
-                filtered_scores=scores[filtered_indices]
-                filtered_boxes=boxes[filtered_indices]
-                num_list = filtered_indices[0].tolist()
-                filtered_labels = [labels[i] for i in num_list]
-                show_labeled_image(image, filtered_boxes, filtered_labels)
-                val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
+        else:    
+            for filename in os.listdir(folder):
+                if val == "3":
+                    break
+                if filename.endswith('.jpg'):
+                    image = utils.read_image(folder + '/' + filename) 
+                    predictions = model.predict(image)
+                    labels, boxes, scores = predictions
+                    # show_labeled_image(image, boxes, labels)
+
+                    thresh=.5
+                    filtered_indices=np.where(scores>thresh)
+                    filtered_scores=scores[filtered_indices]
+                    filtered_boxes=boxes[filtered_indices]
+                    num_list = filtered_indices[0].tolist()
+                    filtered_labels = [labels[i] for i in num_list]
+                    show_labeled_image(image, filtered_boxes, filtered_labels)
+                    val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
 
     val = input("Enter 1 to train, 2 to predict, or 3 to quit: ")
 
