@@ -22,9 +22,9 @@ while(val != "3"):
 
         Train_dataset=core.Dataset('Train/',transform=custom_transforms)
         Test_dataset = core.Dataset('Test/')
-        loader=core.DataLoader(Train_dataset, batch_size=2, shuffle=True)
+        loader=core.DataLoader(Train_dataset, batch_size=4, shuffle=True)
         model = core.Model(['TBbacillus'])
-        losses = model.fit(loader, Test_dataset, epochs=25, lr_step_size=5, learning_rate=0.001, verbose=True)
+        losses = model.fit(loader, Test_dataset, epochs=10, lr_step_size=5, learning_rate=0.01, verbose=True)
 
         plt.title('model loss')
         plt.ylabel('loss')
@@ -43,16 +43,16 @@ while(val != "3"):
                 image = utils.read_image('Images/' + filename) 
                 predictions = model.predict(image)
                 labels, boxes, scores = predictions
-                # show_labeled_image(image, boxes, labels)
+                show_labeled_image(image, boxes, labels)
 
-                thresh=.5
-                filtered_indices=np.where(scores>thresh)
-                filtered_scores=scores[filtered_indices]
-                filtered_boxes=boxes[filtered_indices]
-                num_list = filtered_indices[0].tolist()
-                filtered_labels = [labels[i] for i in num_list]
-                show_labeled_image(image, filtered_boxes, filtered_labels)
-                val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
+                # thresh=.5
+                # filtered_indices=np.where(scores>thresh)
+                # filtered_scores=scores[filtered_indices]
+                # filtered_boxes=boxes[filtered_indices]
+                # num_list = filtered_indices[0].tolist()
+                # filtered_labels = [labels[i] for i in num_list]
+                # show_labeled_image(image, filtered_boxes, filtered_labels)
+                # val = input("Enter 2 to predict the next image or 3 to exit predicting: ")
 
     val = input("Enter 1 to train, 2 to predict, or 3 to quit: ")
 
