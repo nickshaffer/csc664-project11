@@ -36,11 +36,21 @@ while(val != "3"):
     if(val == "2"):
         model = core.Model.load('model_weights.pth', ['TBbacillus'])
 
-        for filename in os.listdir('Images'):
+        res = input("Enter 1 for images from kaggle with TB, 2 for images from kaggle without TB, and 3 for images that are from the internet: ")
+        folder = "images - kaggle with TB"
+        match int(res):
+            case 1:
+                folder = "images - kaggle with TB"
+            case 2:
+                folder = "images - kaggle without TB"
+            case 3:
+                folder = "images - new"
+
+        for filename in os.listdir(folder):
             if val == "3":
                 break
             if filename.endswith('.jpg'):
-                image = utils.read_image('Images/' + filename) 
+                image = utils.read_image(folder + '/' + filename) 
                 predictions = model.predict(image)
                 labels, boxes, scores = predictions
                 # show_labeled_image(image, boxes, labels)
