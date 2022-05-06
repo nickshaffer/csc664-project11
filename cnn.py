@@ -13,8 +13,8 @@ while(val != "3"):
     if(val == "1"):
         custom_transforms = transforms.Compose([
         transforms.ToPILImage(),
-        # transforms.Resize(900),
         transforms.Resize(900),
+        # transforms.Resize(256),
         transforms.RandomHorizontalFlip(0.5),
         transforms.ColorJitter(saturation=0.2),
         transforms.ToTensor(),
