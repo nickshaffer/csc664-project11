@@ -13,6 +13,7 @@ while(val != "3"):
     if(val == "1"):
         custom_transforms = transforms.Compose([
         transforms.ToPILImage(),
+        # transforms.Resize(900),
         transforms.Resize(900),
         transforms.RandomHorizontalFlip(0.5),
         transforms.ColorJitter(saturation=0.2),
@@ -34,7 +35,6 @@ while(val != "3"):
 
         # if 'roi_heads' not in name and 'rpn' not in name:
         #     p.requires_grad = False
-
 
         losses = model.fit(loader, Test_dataset, epochs=10, lr_step_size=5, learning_rate=0.01, verbose=True)
 
