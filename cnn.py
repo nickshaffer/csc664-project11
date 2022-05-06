@@ -1,6 +1,5 @@
 import torch
 from torch import nn
-# print(torch.cuda.is_available())
 from detecto import core, utils, visualize
 from detecto.visualize import show_labeled_image, plot_prediction_grid
 from torchvision import transforms
@@ -11,6 +10,8 @@ import os
 val = input("Enter 1 to train, 2 to predict a image, or 3 to quit: ")
 while(val != "3"):
     if(val == "1"):
+        # print(torch.cuda.is_available())
+
         custom_transforms = transforms.Compose([
         transforms.ToPILImage(),
         transforms.Resize(900),
