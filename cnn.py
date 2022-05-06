@@ -7,7 +7,6 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-import random
 
 val = input("Enter 1 to train, 2 to predict a image, or 3 to quit: ")
 while(val != "3"):
@@ -42,9 +41,9 @@ while(val != "3"):
 
         # --- improvement attempt: 2 ---
         # --- replacing max pooling with average pooling ---
-        for i, layer in torch_model.named_children():
-            if isinstance(layer, torch.nn.MaxPool2d):
-                torch_model.features[int(i)] = nn.AvgPool2d(kernel_size=2, stride=2, padding=0)
+        # for i, layer in torch_model.named_children():
+        #     if isinstance(layer, torch.nn.MaxPool2d):
+        #         torch_model.features[int(i)] = nn.AvgPool2d(kernel_size=2, stride=2, padding=0)
 
         losses = model.fit(loader, Test_dataset, epochs=10, lr_step_size=5, learning_rate=0.001, verbose=True)
 
