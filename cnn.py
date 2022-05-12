@@ -83,7 +83,7 @@ while(val != "3"):
                     labels, boxes, scores = predictions
                     # show_labeled_image(image, boxes, labels)
 
-                    thresh=.4
+                    thresh=0.3
                     filtered_indices=np.where(scores>thresh)
                     filtered_scores=scores[filtered_indices]
                     filtered_boxes=boxes[filtered_indices]
