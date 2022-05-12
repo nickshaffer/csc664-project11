@@ -14,7 +14,6 @@ while(val != "3"):
 
         custom_transforms = transforms.Compose([
         transforms.ToPILImage(),
-        transforms.Resize(900),
         # transforms.Resize(256),
         transforms.RandomHorizontalFlip(0.5),
         transforms.ColorJitter(saturation=0.2),
