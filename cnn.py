@@ -23,7 +23,7 @@ def main():
             ])
 
             Train_dataset=core.Dataset('Train/',transform=custom_transforms)
-            Test_dataset = core.Dataset('Test/')
+            Validate_dataset = core.Dataset('Validation/')
             loader=core.DataLoader(Train_dataset, batch_size=4, shuffle=True)
             model = core.Model(['TBbacillus'])
 
@@ -46,7 +46,7 @@ def main():
                 if isinstance(layer, torch.nn.MaxPool2d):
                     torch_model.features[int(i)] = nn.AvgPool2d(kernel_size=2, stride=2, padding=0)
 
-            losses = model.fit(loader, Test_dataset, epochs=10, lr_step_size=5, learning_rate=0.01, verbose=True)
+            losses = model.fit(loader, Validate_dataset, epochs=10, lr_step_size=5, learning_rate=0.01, verbose=True)
 
             plt.title('model loss')
             plt.ylabel('loss')
