@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from detecto import core, utils, visualize
 from detecto.visualize import show_labeled_image, plot_prediction_grid
-from torchvision import transforms
+from torchvision import transforms, datasets
 import matplotlib.pyplot as plt
 import numpy as np
 import os
