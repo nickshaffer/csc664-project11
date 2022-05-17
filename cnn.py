@@ -11,8 +11,10 @@ def main():
     val = input("Enter 1 to train, 2 to predict a image, or 3 to quit: ")
     while(val != "3"):
         if(val == "1"):
-            # print(torch.cuda.is_available())
+            # checks if torch cuda is installed
+            print("Torch cuda installed: %s" % (torch.cuda.is_available()))
 
+            # establishes transformation for upcoming dataset
             custom_transforms = transforms.Compose([
             transforms.ToPILImage(),
             # transforms.Resize(256),
@@ -22,11 +24,15 @@ def main():
             utils.normalize_transform(),
             ])
 
+            # applies transformation to both training and validation dataset
             Train_dataset=core.Dataset('Train/',transform=custom_transforms)
             Validate_dataset = core.Dataset('Validation/')
+            # loads both datasets, which batch size of 4 and shuffle enabled
             loader=core.DataLoader(Train_dataset, batch_size=4, shuffle=True)
+            # begins training on object annotation 'TBbacillus'
             model = core.Model(['TBbacillus'])
 
+            # grabs internal model 
             torch_model = model.get_internal_model()
             print(type(torch_model))
 
