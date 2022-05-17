@@ -35,6 +35,9 @@ Faster R-CNN ResNet-50 FPN
 * drag image into "images - your own" folder
 * when you run the program, select 2 to predict an image, then select 4 for the folder with your own images
 
+## Adding pre-trained weights
+* place the selected "model_weights.pth" into directory
+
 ### Credit
 Assets taken from [alankbi/detecto](https://github.com/alankbi/detecto)
 
