@@ -1,44 +1,61 @@
 <annotation>
+	<folder>my-project-name</folder>
 	<filename>tuberculosis-phone-0048.jpg</filename>
+	<path>/my-project-name/tuberculosis-phone-0048.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
 	<size>
-                <width>1632</width>
-                <height>1224</height>
-                <depth>3</depth>
-            </size>
+		<width>1632</width>
+		<height>1224</height>
+		<depth>3</depth>
+	</size>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>699</xmin>
-			<ymin>939</ymin>
-			<xmax>808</xmax>
-			<ymax>1025</ymax>
+			<xmin>970</xmin>
+			<ymin>492</ymin>
+			<xmax>1063</xmax>
+			<ymax>570</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
 			<xmin>1025</xmin>
-			<ymin>778</ymin>
-			<xmax>1082</xmax>
-			<ymax>894</ymax>
+			<ymin>777</ymin>
+			<xmax>1093</xmax>
+			<ymax>920</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>987</xmin>
-			<ymin>505</ymin>
-			<xmax>1060</xmax>
-			<ymax>556</ymax>
+			<xmin>693</xmin>
+			<ymin>930</ymin>
+			<xmax>827</xmax>
+			<ymax>1033</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TBbacillus</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>1551</xmin>
+			<ymin>25</ymin>
+			<xmax>1626</xmax>
+			<ymax>89</ymax>
 		</bndbox>
 	</object>
 </annotation>

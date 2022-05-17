@@ -1,200 +1,181 @@
 <annotation>
+	<folder>my-project-name</folder>
 	<filename>tuberculosis-phone-0201.jpg</filename>
+	<path>/my-project-name/tuberculosis-phone-0201.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
 	<size>
-                <width>1632</width>
-                <height>1224</height>
-                <depth>3</depth>
-            </size>
+		<width>1632</width>
+		<height>1224</height>
+		<depth>3</depth>
+	</size>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>789</xmin>
-			<ymin>20</ymin>
-			<xmax>845</xmax>
-			<ymax>117</ymax>
+			<xmin>701</xmin>
+			<ymin>357</ymin>
+			<xmax>781</xmax>
+			<ymax>475</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>605</xmin>
-			<ymin>267</ymin>
-			<xmax>653</xmax>
-			<ymax>331</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>TBbacillus</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
-		<bndbox>
-			<xmin>290</xmin>
-			<ymin>651</ymin>
-			<xmax>364</xmax>
+			<xmin>295</xmin>
+			<ymin>659</ymin>
+			<xmax>365</xmax>
 			<ymax>701</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>663</xmin>
-			<ymin>674</ymin>
-			<xmax>750</xmax>
-			<ymax>713</ymax>
+			<xmin>795</xmin>
+			<ymin>23</ymin>
+			<xmax>858</xmax>
+			<ymax>128</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>919</xmin>
-			<ymin>480</ymin>
-			<xmax>973</xmax>
-			<ymax>550</ymax>
+			<xmin>1533</xmin>
+			<ymin>20</ymin>
+			<xmax>1632</xmax>
+			<ymax>93</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1086</xmin>
-			<ymin>447</ymin>
-			<xmax>1124</xmax>
-			<ymax>494</ymax>
+			<xmin>1377</xmin>
+			<ymin>151</ymin>
+			<xmax>1432</xmax>
+			<ymax>204</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>965</xmin>
-			<ymin>556</ymin>
-			<xmax>1018</xmax>
-			<ymax>637</ymax>
+			<xmin>1515</xmin>
+			<ymin>140</ymin>
+			<xmax>1614</xmax>
+			<ymax>237</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1394</xmin>
-			<ymin>482</ymin>
-			<xmax>1429</xmax>
-			<ymax>583</ymax>
+			<xmin>1433</xmin>
+			<ymin>348</ymin>
+			<xmax>1492</xmax>
+			<ymax>450</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>632</xmin>
-			<ymin>893</ymin>
-			<xmax>684</xmax>
-			<ymax>963</ymax>
+			<xmin>1392</xmin>
+			<ymin>476</ymin>
+			<xmax>1439</xmax>
+			<ymax>598</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>641</xmin>
-			<ymin>1021</ymin>
-			<xmax>727</xmax>
+			<xmin>1393</xmin>
+			<ymin>573</ymin>
+			<xmax>1559</xmax>
+			<ymax>811</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TBbacillus</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>909</xmin>
+			<ymin>1003</ymin>
+			<xmax>1052</xmax>
 			<ymax>1076</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1231</xmin>
-			<ymin>742</ymin>
-			<xmax>1266</xmax>
-			<ymax>823</ymax>
+			<xmin>1112</xmin>
+			<ymin>979</ymin>
+			<xmax>1192</xmax>
+			<ymax>1042</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1216</xmin>
-			<ymin>806</ymin>
-			<xmax>1307</xmax>
-			<ymax>858</ymax>
+			<xmin>1052</xmin>
+			<ymin>780</ymin>
+			<xmax>1142</xmax>
+			<ymax>831</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1373</xmin>
-			<ymin>160</ymin>
-			<xmax>1425</xmax>
-			<ymax>193</ymax>
+			<xmin>1178</xmin>
+			<ymin>698</ymin>
+			<xmax>1310</xmax>
+			<ymax>884</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1532</xmin>
-			<ymin>139</ymin>
-			<xmax>1600</xmax>
-			<ymax>203</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>TBbacillus</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
-		<bndbox>
-			<xmin>1398</xmin>
-			<ymin>812</ymin>
-			<xmax>1456</xmax>
-			<ymax>860</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>TBbacillus</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
-		<bndbox>
-			<xmin>1173</xmin>
-			<ymin>831</ymin>
-			<xmax>1231</xmax>
-			<ymax>876</ymax>
+			<xmin>1263</xmin>
+			<ymin>1155</ymin>
+			<xmax>1323</xmax>
+			<ymax>1216</ymax>
 		</bndbox>
 	</object>
 </annotation>

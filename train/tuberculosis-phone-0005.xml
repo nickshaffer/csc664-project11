@@ -1,56 +1,61 @@
 <annotation>
+	<folder>my-project-name</folder>
 	<filename>tuberculosis-phone-0005.jpg</filename>
+	<path>/my-project-name/tuberculosis-phone-0005.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
 	<size>
-                <width>1632</width>
-                <height>1224</height>
-                <depth>3</depth>
-            </size>
+		<width>1632</width>
+		<height>1224</height>
+		<depth>3</depth>
+	</size>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1114</xmin>
-			<ymin>874</ymin>
-			<xmax>1194</xmax>
-			<ymax>907</ymax>
+			<xmin>963</xmin>
+			<ymin>930</ymin>
+			<xmax>1055</xmax>
+			<ymax>1073</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>855</xmin>
-			<ymin>630</ymin>
-			<xmax>917</xmax>
-			<ymax>661</ymax>
+			<xmin>1113</xmin>
+			<ymin>863</ymin>
+			<xmax>1193</xmax>
+			<ymax>906</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1</xmin>
-			<ymin>987</ymin>
-			<xmax>45</xmax>
-			<ymax>1043</ymax>
+			<xmin>0</xmin>
+			<ymin>670</ymin>
+			<xmax>61</xmax>
+			<ymax>783</ymax>
 		</bndbox>
 	</object>
 	<object>
 		<name>TBbacillus</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<occluded>0</occluded>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
 		<bndbox>
-			<xmin>1095</xmin>
-			<ymin>633</ymin>
-			<xmax>1165</xmax>
-			<ymax>674</ymax>
+			<xmin>0</xmin>
+			<ymin>988</ymin>
+			<xmax>44</xmax>
+			<ymax>1073</ymax>
 		</bndbox>
 	</object>
 </annotation>
